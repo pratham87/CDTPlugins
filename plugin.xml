@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="ExampleChecker"
+         point="org.eclipse.cdt.codan.core.checkers">
+      <checker
+            class="examplechecker.checker1"
+            id="examplechecker.checker1"
+            name="test">
+         <problem
+               category="org.eclipse.cdt.codan.core.categories.ProgrammingProblems"
+               defaultEnabled="true"
+               defaultSeverity="Warning"
+               id="examplechecker.problem1"
+               messagePattern="Integer overflow"
+               name="Integer overflow">
+         </problem>
+      </checker>
+      <checker
+            class="examplechecker.checker2"
+            id="examplechecker.checker2"
+            name="test2">
+         <problem
+               category="org.eclipse.cdt.codan.core.categories.ProgrammingProblems"
+               defaultEnabled="true"
+               defaultSeverity="Warning"
+               id="examplechecker.problem2"
+               messagePattern="Missing format specifier"
+               name="Uncontrolled format string">
+         </problem>
+      </checker>
+      <checker
+            class="examplechecker.checker3"
+            id="examplechecker.checker3"
+            name="test3">
+         <problem
+               category="org.eclipse.cdt.codan.core.categories.ProgrammingProblems"
+               defaultEnabled="true"
+               defaultSeverity="Warning"
+               id="examplechecker.problem3"
+               messagePattern="Use of Potentially Dangerous Function"
+               name="Use of Potentially Dangerous Function">
+         </problem>
+      </checker>
+      <checker
+            class="examplechecker.checker4"
+            id="examplechecker.checker4"
+            name="test4">
+         <problem
+               category="org.eclipse.cdt.codan.core.categories.ProgrammingProblems"
+               defaultEnabled="true"
+               defaultSeverity="Warning"
+               id="examplechecker.problem4"
+               messagePattern="Use of a One-Way Hash without a Salt"
+               name="Use of a One-Way Hash without a Salt">
+         </problem>
+      </checker>
+      <checker
+            class="examplechecker.checker5"
+            id="examplechecker.checker5"
+            name="test5">
+         <problem
+               category="org.eclipse.cdt.codan.core.categories.ProgrammingProblems"
+               defaultEnabled="true"
+               defaultSeverity="Warning"
+               id="examplechecker.problem5"
+               messagePattern="Use of broken/risky cryptographic algorithm "
+               name="Use of broken/risky cryptographic algorithm ">
+         </problem>
+      </checker>
+      <checker
+            class="examplechecker.checker6"
+            id="examplechecker.checker6"
+            name="test6">
+         <problem
+               category="org.eclipse.cdt.codan.core.categories.ProgrammingProblems"
+               defaultEnabled="true"
+               defaultSeverity="Warning"
+               id="ExampleChecker.problem6"
+               name="Improper Restriction of Excessive Authentication Attempts">
+         </problem>
+      </checker>
+   </extension>
+
+</plugin>
